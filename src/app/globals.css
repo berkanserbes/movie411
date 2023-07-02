@@ -3,12 +3,40 @@
 @tailwind utilities;
 
 @layer utilities {
-  .bg-radial-gradient {
-    background: linear-gradient(to right, #c9d6ff, #e2e2e2);
-  }
   .brand-text {
     color: #ffffff;
     text-shadow: 0 -1px 4px #dad5d5, 0 -2px 10px #ff0, 0 -1px 10px #ff8000,
       0 -1px 30px #f00;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background: #ff3d00;
+  width: 3px;
+  height: 24px;
+  transform: translateX(-50%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
