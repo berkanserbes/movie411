@@ -18,8 +18,10 @@ const Card = ({ result }) => {
         />
         <div className="p-2">
           <p>{result.overview.substring(0, 60)} ...</p>
-          <h2 className="text-lg font-bold">{result.title || result.name}</h2>
-          <p className="flex items-center">
+          <h2 className="text-lg font-bold text-center sm:text-left">
+            {result.title || result.name}
+          </h2>
+          <p className="flex items-center justify-center md:justify-normal">
             {result.first_air_date || result.release_date}
             <AiFillHeart className="text-red-500 ml-3 mr-1" size={15} />
             {result.vote_count}
