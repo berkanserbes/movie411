@@ -2,6 +2,7 @@ import React from "react";
 import MenuItem from "./MenuItem";
 import Link from "next/link";
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
+import DarkMode from "./DarkMode";
 
 const Header = () => {
   return (
@@ -12,6 +13,7 @@ const Header = () => {
       </div>
 
       <div className="flex items-center space-x-5">
+        <DarkMode />
         <Link href="/">
           <h2 className="text-2xl font-bold lg:text-3xl pe-3 lg:pe-16 brand-text">
             Movie 411

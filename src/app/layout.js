@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import Providers from "@/app/Providers";
 
 export const metadata = {
   title: "Movie 411",
@@ -9,11 +10,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <Header />
-        <Navbar />
-        <main>{children}</main>
+        <Providers>
+          <Header />
+          <Navbar />
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
