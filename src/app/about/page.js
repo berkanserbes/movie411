@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="max-w-6xl mx-auto space-y-4 p-4">
-      <h1 className="text-2xl text-red-500">About Us</h1>
+      <h1 className="text-2xl text-red-500 text-center">About Us</h1>
       <p>
         Movie 411 is a film platform created for cinema lovers to discover the
         latest trends and experience the most acclaimed films. <br /> <br /> In
