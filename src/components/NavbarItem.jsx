@@ -5,7 +5,7 @@ import Link from "next/link";
 const NavbarItem = ({ title, param }) => {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
-  console.log(genre);
+
   return (
     <div>
       <Link
